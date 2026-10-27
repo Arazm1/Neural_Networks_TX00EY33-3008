@@ -7854,7 +7854,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Data-understading">Data understading<a class="anchor-link" href="#Data-understading">¶</a></h2>
+<h2 id="Data-understanding">Data understanding<a class="anchor-link" href="#Data-understanding">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8627,10 +8627,14 @@ Final Validation Loss:     0.2318
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
 <li><strong>Loss:</strong> Training loss decreased from <code>~1.25</code> to <code>~0.20</code>, and validation loss from <code>~1.22</code> to <code>~0.23</code> over 100 epochs. Both curves decreased steadily and stayed close to each other, with no sign of validation loss rising at the end.</li>
-<li><strong>Accuracy:</strong> Training accuracy and Validation accuracy both exceeded the required ~95%.</li>
+<li><strong>Accuracy:</strong> Training accuracy and Validation accuracy both exceeded the required ~95%.<ul>
+<li>Final Training Accuracy:   <strong>95.83%</strong></li>
+<li>Final Validation Accuracy: <strong>96.67%</strong></li>
+</ul>
+</li>
 <li><strong>Overfitting:</strong> Training and validation accuracy are close to each other, and the final validation loss (0.23) is only slightly above the training loss (0.20). No clear sign of overfitting.</li>
 <li><strong>Note:</strong> validation set has only 30 samples, so each mistake changes accuracy by 3.3 percentage points, which makes the validation curve jumpy.</li>
-<li><strong>Conclusion:</strong> The model learned the task very well with the <code>rmsprop</code> setting on <code>model.compile</code>. The result is almost at the target (95%).</li>
+<li><strong>Conclusion:</strong> The model learned the task very well with the <code>rmsprop</code> setting on <code>model.compile</code>. The result reached the target (95%).</li>
 </ul>
 </div>
 </div>
